@@ -9,6 +9,7 @@ def factorize_number(num):
             return i, num // i
     return None, None
 
+
 def getlines():
     """Reads a file line by line and save the data to a list"""
     if len(sys.argv) < 2:
@@ -22,7 +23,6 @@ def getlines():
     except FileNotFoundError:
         print(f"No file found: {filename}")
         return []
-    
     return lines
 
 
