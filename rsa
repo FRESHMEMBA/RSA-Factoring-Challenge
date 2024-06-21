@@ -1,0 +1,14 @@
+#!/bin/python3
+import rsa_factoring as rf
+
+def main():
+    lines = rf.getlines()
+    for line in lines:
+        n = int(line.strip())
+        p, q = rf.factorize_number(n)
+        if p and q:
+            if rf.is_prime(p) and rf.is_prime(q):
+                print(f"{n}={p}*{q}")
+
+if __name__ == "__main__":
+    main()
