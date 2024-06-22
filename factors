@@ -7,7 +7,7 @@ def main():
         n = int(line.strip())
         p, q = rf.factorize_number(n)
         if p and q:
-            print(f"{n}={q}*{p}")
+            print(f"{n}={p}*{q}")
 
 
 if __name__ == "__main__":

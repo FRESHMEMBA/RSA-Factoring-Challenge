@@ -6,7 +6,7 @@ def factorize_number(num):
     """Finds two factors of num such that num = p * q."""
     for i in range(2, int(math.isqrt(num)) + 1):
         if num % i == 0:
-            return i, num // i
+            return num // i, i
     return None, None
 
 
@@ -30,5 +30,5 @@ def is_prime(num):
     """Returns true if num is a prime number, false otherwise"""
     for i in range(2, math.isqrt(num) + 1):
         if num % i == 0:
-            return True
-    return False
+            return False
+    return True
